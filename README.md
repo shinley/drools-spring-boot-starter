@@ -4,9 +4,11 @@
 # 如何使用
 1. 在pom中引入依赖
 ```
+<dependency>
     <groupId>com.shinley.drools</groupId>
     <artifactId>drools-spring-boot-starter</artifactId>
     <version>1.0-SNAPSHOT</version>
+<dependency>
 ```
 2. 在配置文件中配置 规则文件路径; 如果不配置， 默认使用 `rules/`
 ```
