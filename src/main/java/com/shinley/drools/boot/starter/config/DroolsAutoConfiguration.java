@@ -27,14 +27,14 @@ import java.io.IOException;
 @Configuration
 @ConditionalOnBean(InitDroolsMarker.class)
 @EnableConfigurationProperties
-@ConfigurationProperties(prefix = "drools.rules.path")
+@ConfigurationProperties(prefix = "drools.rules")
 public class DroolsAutoConfiguration {
     private static Logger logger = LoggerFactory.getLogger(DroolsAutoConfiguration.class);
 
     /**
      * 用户自定义classpath下的规则文件路径
      */
-    @Value("${drools.rules.path}")
+    @Value("${path}")
     private String custom_rules_path;
 
     /**
